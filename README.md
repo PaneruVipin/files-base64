@@ -11,7 +11,7 @@ The function takes a file as an argument and returns a Promise that resolves wit
 ```
 import { fileToBase64 } from "files-base64"
 
-const inputFile = document.querySelector('input[type="file"]').files[0];
+const inputFile = document.querySelector('input[type="file"]').files[0];  // file
 fileToBase64(inputFile)
   .then(result => {
     console.log(result);
