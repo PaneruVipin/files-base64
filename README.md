@@ -6,7 +6,7 @@
 ```
 npm i files-base64@latest
 ```
-### usage
+### Usage
 here is example for `fileToBase64` function.\
 \
 The function takes a file as an argument and returns a Promise that resolves with the base64 representation of the file. If there is an error, the Promise will be rejected with the error.
@@ -32,6 +32,7 @@ const base64Url = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBx
 const file = await base64ToFile(base64Url, "image.jpeg");
 console.log(file);
 ```
-
+#### Dependencies
+The functions use the FileReader API, the fetch API, and the File constructor, which are available in modern browsers. There are no other dependencies.
 
 
