@@ -7,6 +7,8 @@
 npm i files-base64@latest
 ```
 ### usage
+here is example for `fileToBase64` function.\
+\
 The function takes a file as an argument and returns a Promise that resolves with the base64 representation of the file. If there is an error, the Promise will be rejected with the error.
 ```
 import { fileToBase64 } from "files-base64"
@@ -19,4 +21,15 @@ fileToBase64(inputFile)
   .catch(error => {
     console.error(error);
   });
-````
+```
+The function takes two arguments: url which is the base64 representation of the file, and fileName which is an optional argument that sets the name of the file. It returns a File object that can be used for further processing.
+```
+import { fileToBase64 } from "files-base64"
+
+const base64Url = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUSEhIVFhUVFRcVFRU...";
+const file = await base64ToFile(base64Url, "image.jpeg");
+console.log(file);
+```
+
+
+
