@@ -22,6 +22,8 @@ fileToBase64(inputFile)
     console.error(error);
   });
 ```
+here is example for `fileToBase64` function.\
+\
 The function takes two arguments: url which is the base64 representation of the file, and fileName which is an optional argument that sets the name of the file. It returns a File object that can be used for further processing.
 ```
 import { fileToBase64 } from "files-base64"
